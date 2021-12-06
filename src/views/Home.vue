@@ -1,18 +1,44 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AppWelcome />
+
+    <AppCarousel />
+
+    <AppAbout />
+    
+    <AppForm />
+
+    <AppFooter />
+    
+    <AppFloatButton />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import AppWelcome from '../components/AppWelcome.vue'
+import AppFooter from '../components/AppFooter.vue'
+import AppCarousel from '../components/AppCarousel.vue'
+import AppAbout from '../components/AppAbout.vue'
+import AppForm from '../components/AppForm.vue'
+import AppFloatButton from '../components/AppFloatButton.vue'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    AppWelcome,
+    AppFooter,
+    AppCarousel,
+    AppAbout,
+    AppForm,
+    AppFloatButton
   }
-}
+};
 </script>
+
+<style scoped>
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+}
+</style>

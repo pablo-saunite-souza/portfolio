@@ -1,7 +1,14 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
+  "author": {
+    "name": "Pablo Saunite de Souza",
+    "email": "pablosaunite@gmail.com"
+  },
+  "repository": {
+    "url": "http://github.com/pablo-saunite-souza/porfolio"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
